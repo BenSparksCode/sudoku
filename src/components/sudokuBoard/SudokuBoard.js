@@ -2,14 +2,20 @@ import React, { useContext } from 'react'
 import { SudokuContext } from '../../contexts/SudokuContext' 
 
 const SodukoSquare = ({ row, col, value }) => {
+    const {changeCellValue} = useContext(SudokuContext)
 
+    const keyPressed = (e) => {
+        const numEntered = e.key
 
-    const printVal = () => {
-        console.log(value, row, col);
+        if(numEntered.match("^[0-9]$")){
+            changeCellValue(row, col, numEntered)
+        } else {
+           return
+        }
     }
 
     return (
-        <div onClick={printVal} className="sudoku-square">
+        <div onKeyPress={e=>keyPressed(e)} tabIndex={0} className="sudoku-square">
             {value}
         </div>
     )

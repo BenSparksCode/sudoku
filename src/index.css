@@ -49,6 +49,11 @@ code {
 
 }
 
+.sudoku-square:focus{
+  background-color: aqua;
+}
+
+
 .controls-container{
   margin-top: 20px;
   display: flex;
