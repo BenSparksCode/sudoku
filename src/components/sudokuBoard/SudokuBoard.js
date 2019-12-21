@@ -16,7 +16,7 @@ const SodukoSquare = ({ row, col, value }) => {
 
     return (
         <div onKeyPress={e=>keyPressed(e)} tabIndex={0} className="sudoku-square">
-            {value}
+            {value===0?"":value}
         </div>
     )
 }
