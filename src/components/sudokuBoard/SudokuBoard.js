@@ -8,7 +8,7 @@ const SodukoSquare = ({ row, col, value }) => {
         const numEntered = e.key
 
         if(numEntered.match("^[0-9]$")){
-            changeCellValue(row, col, numEntered)
+            changeCellValue(row, col, parseInt(numEntered))
         } else {
            return
         }

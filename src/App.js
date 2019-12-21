@@ -15,9 +15,10 @@ function App() {
 
       <SudokuContextProvider>
         <SudokuBoard />
+        <Controls />
       </SudokuContextProvider>
       
-      <Controls />
+      
     </div>
   );
 }
