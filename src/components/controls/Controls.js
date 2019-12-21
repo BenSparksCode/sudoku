@@ -7,7 +7,7 @@ const Controls = () => {
     }
 
     return (
-        <div>
+        <div className="controls-container">
             <button className="btn btn-new" onClick={clicked}>New</button>
             <button className="btn btn-solve" onClick={clicked}>Solve</button>
             <button className="btn btn-check" onClick={clicked}>Check</button>

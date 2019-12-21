@@ -6,8 +6,6 @@ import Controls from './components/controls/Controls'
 
 
 
-import './App.css';
-
 function App() {
   return (
     <div className="App">

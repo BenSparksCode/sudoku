@@ -11,3 +11,69 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.App {
+  text-align: center;
+}
+
+.navbar{
+
+}
+
+.sudoku-board{
+  border: 1px black solid;
+  display: inline-block;
+}
+
+.sudoku-board-row{
+  display: flex;
+}
+
+.sudoku-subgrid{
+  border: 1px black solid;
+}
+
+.sudoku-subgrid-row{
+  display: flex;
+
+}
+
+.sudoku-square{
+  height: 40px;
+  width: 40px;
+  border: 1px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.controls-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  width: 100px;
+  height:30px
+
+}
+
+.btn-new{
+  margin-right: 30px;
+
+}
+
+.btn-solve{
+
+}
+
+.btn-check{
+  margin-left: 30px;
+
+}
+
+
+
