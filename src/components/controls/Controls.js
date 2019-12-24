@@ -3,11 +3,9 @@ import { SudokuContext } from '../../contexts/SudokuContext'
 
 const Controls = () => {
 
-    const {generateNewBoard, solveBoard, checkSolution} = useContext(SudokuContext)
+    const {generateNewBoard, solveBoard, checkSolution } = useContext(SudokuContext)
 
-    const clicked = () => {
-        console.log("clicked");
-    }
+    
 
     return (
         <div className="controls-container">

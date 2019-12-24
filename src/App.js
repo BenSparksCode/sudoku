@@ -30,3 +30,7 @@ export default App;
 //nfn - named arrow function
 //rafc - arrow functional component
 
+// TODO
+// - Add more parts to Context
+// - Add toasts
+// - Add CSS for 
