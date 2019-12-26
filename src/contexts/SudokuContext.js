@@ -1,4 +1,5 @@
 import React, { createContext, useState } from 'react'
+import Toastify from 'toastify-js'
 
 import { solveSudoku, generateBoard, checkSolved } from '../util/SudokuSolver'
 
@@ -27,15 +28,6 @@ const SudokuContextProvider = (props) => {
 
     const [sudokuState, setSudokuState] = useState(initialSudokuState)
 
-    const initializeGame = () => {
-        let firstBoard = generateBoard(30)
-        console.log("before", sudokuState);
-        let newState = { ...sudokuState, ...{ initialBoard: firstBoard, workingBoard: firstBoard } }
-        console.log("after", newState);
-
-        setSudokuState(newState)
-    }
-
     const setWorkingBoard = (board) => {
         setSudokuState({ ...sudokuState, ...{ workingBoard: board } })
     }
@@ -48,11 +40,15 @@ const SudokuContextProvider = (props) => {
 
     const generateNewBoard = () => {
         const newBoard = generateBoard()
+        let newBoardCopy = []
+        for (let i = 0; i < 9; i++) {
+            newBoardCopy.push([...newBoard[i]])
+        }
 
         setSudokuState({
             ...sudokuState, ...{
                 initialBoard: newBoard,
-                workingBoard: newBoard,
+                workingBoard: newBoardCopy,
                 solved: false
             }
         })
@@ -80,6 +76,27 @@ const SudokuContextProvider = (props) => {
         const solved = checkSolved(newGrid)
         if (solved) {
             setSudokuState({ ...sudokuState, ...{ solved: true } })
+            //Toast triggered here
+            Toastify({
+                text: "Correct!",
+                duration: 2000,
+                newWindow: true,
+                close: false,
+                gravity: "top", // `top` or `bottom`
+                position: 'center', // `left`, `center` or `right`
+                backgroundColor: "green",
+              }).showToast();
+        } else {
+            setSudokuState({ ...sudokuState, ...{ solved: false } })
+            Toastify({
+                text: "Wrong, try again.",
+                duration: 2000,
+                newWindow: true,
+                close: false,
+                gravity: "top", // `top` or `bottom`
+                position: 'center', // `left`, `center` or `right`
+                backgroundColor: "red",
+              }).showToast();
         }
     }
 
@@ -88,7 +105,7 @@ const SudokuContextProvider = (props) => {
 
 
     return (
-        <SudokuContext.Provider value={{ sudokuState, changeCellValue, generateNewBoard, solveBoard, checkSolution, initializeGame }}>
+        <SudokuContext.Provider value={{ sudokuState, changeCellValue, generateNewBoard, solveBoard, checkSolution }}>
             {props.children}
         </SudokuContext.Provider>
     )

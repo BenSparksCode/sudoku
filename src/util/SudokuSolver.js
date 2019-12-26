@@ -2,7 +2,7 @@ export const generateBoard = (difficulty) => {
     //difficulty = no. of cells removed
     //min = 10, max = 64
 
-    difficulty = 40
+    difficulty = 10
 
     let newBoard = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
