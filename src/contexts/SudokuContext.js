@@ -20,6 +20,7 @@ const testGrid = [
 const initialSudokuState = {
     initialBoard: testGrid,
     workingBoard: testGrid,
+    difficulty: 9,
     solved: false
 }
 
@@ -38,8 +39,12 @@ const SudokuContextProvider = (props) => {
         setWorkingBoard(gridCopy)
     }
 
+    const setDifficulty = (val) => {
+        setSudokuState({ ...sudokuState, ...{ difficulty: val } })
+    }
+
     const generateNewBoard = () => {
-        const newBoard = generateBoard()
+        const newBoard = generateBoard(sudokuState.difficulty)
         let newBoardCopy = []
         for (let i = 0; i < 9; i++) {
             newBoardCopy.push([...newBoard[i]])
@@ -105,7 +110,7 @@ const SudokuContextProvider = (props) => {
 
 
     return (
-        <SudokuContext.Provider value={{ sudokuState, changeCellValue, generateNewBoard, solveBoard, checkSolution }}>
+        <SudokuContext.Provider value={{ sudokuState, changeCellValue, generateNewBoard, solveBoard, checkSolution, setDifficulty }}>
             {props.children}
         </SudokuContext.Provider>
     )

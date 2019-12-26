@@ -71,9 +71,18 @@ code {
   background-color: aqua;
 }
 
+.all-controls{
+  margin-top: 30px;
+  padding: 2px;
+  padding-bottom: 10px;
+  border: 2px black solid;
+  border-radius: 4px;
+  width: 390px;
+  margin-left: calc(50% - 199px);
+}
 
 .controls-container{
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
@@ -96,6 +105,51 @@ code {
 .btn-check{
   margin-left: 30px;
 
+}
+
+.control-options-container{
+
+  align-self: center;
+  margin-top: 10px;
+  /* margin-left: calc(50% - 200px);
+  width: 400px; */
+}
+
+.slider-container{
+
+  height: 70px;
+}
+
+/* Slider */
+
+.slider {
+  -webkit-appearance: none;
+  width: 95%;
+  height: 5px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: green;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
 }
 
 
