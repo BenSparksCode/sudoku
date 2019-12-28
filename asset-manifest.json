@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/sudoku/static/css/main.b23e9448.chunk.css",
-    "main.js": "/sudoku/static/js/main.bca61341.chunk.js",
-    "main.js.map": "/sudoku/static/js/main.bca61341.chunk.js.map",
-    "runtime-main.js": "/sudoku/static/js/runtime-main.e541fa6a.js",
-    "runtime-main.js.map": "/sudoku/static/js/runtime-main.e541fa6a.js.map",
-    "static/js/2.a8936914.chunk.js": "/sudoku/static/js/2.a8936914.chunk.js",
-    "static/js/2.a8936914.chunk.js.map": "/sudoku/static/js/2.a8936914.chunk.js.map",
-    "index.html": "/sudoku/index.html",
-    "precache-manifest.d93ad4333b9634cb919e7eb1af45d3cd.js": "/sudoku/precache-manifest.d93ad4333b9634cb919e7eb1af45d3cd.js",
-    "service-worker.js": "/sudoku/service-worker.js",
-    "static/css/main.b23e9448.chunk.css.map": "/sudoku/static/css/main.b23e9448.chunk.css.map",
-    "static/js/2.a8936914.chunk.js.LICENSE": "/sudoku/static/js/2.a8936914.chunk.js.LICENSE"
+    "main.css": "bensparkscode.github.io/sudoku/static/css/main.b23e9448.chunk.css",
+    "main.js": "bensparkscode.github.io/sudoku/static/js/main.55e79fd9.chunk.js",
+    "main.js.map": "bensparkscode.github.io/sudoku/static/js/main.55e79fd9.chunk.js.map",
+    "runtime-main.js": "bensparkscode.github.io/sudoku/static/js/runtime-main.d96f475a.js",
+    "runtime-main.js.map": "bensparkscode.github.io/sudoku/static/js/runtime-main.d96f475a.js.map",
+    "static/js/2.a8936914.chunk.js": "bensparkscode.github.io/sudoku/static/js/2.a8936914.chunk.js",
+    "static/js/2.a8936914.chunk.js.map": "bensparkscode.github.io/sudoku/static/js/2.a8936914.chunk.js.map",
+    "index.html": "bensparkscode.github.io/sudoku/index.html",
+    "precache-manifest.5aea68b007c2257ac7a661291c691ea5.js": "bensparkscode.github.io/sudoku/precache-manifest.5aea68b007c2257ac7a661291c691ea5.js",
+    "service-worker.js": "bensparkscode.github.io/sudoku/service-worker.js",
+    "static/css/main.b23e9448.chunk.css.map": "bensparkscode.github.io/sudoku/static/css/main.b23e9448.chunk.css.map",
+    "static/js/2.a8936914.chunk.js.LICENSE": "bensparkscode.github.io/sudoku/static/js/2.a8936914.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.e541fa6a.js",
+    "static/js/runtime-main.d96f475a.js",
     "static/js/2.a8936914.chunk.js",
     "static/css/main.b23e9448.chunk.css",
-    "static/js/main.bca61341.chunk.js"
+    "static/js/main.55e79fd9.chunk.js"
   ]
 }
