@@ -1,6 +1,6 @@
 {
   "name": "sudoku",
-  "homepage": "bensparkscode.github.io/sudoku/",
+  "homepage": "https://bensparkscode.github.io/sudoku/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
